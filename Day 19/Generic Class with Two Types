@@ -1,0 +1,20 @@
+class TwoTypes<T, U> {
+    T first;
+    U second;
+
+    TwoTypes(T f, U s) {
+        first = f;
+        second = s;
+    }
+
+    void print() {
+        System.out.println(first + " " + second);
+    }
+}
+
+public class GenericTwoTypes {
+    public static void main(String[] args) {
+        TwoTypes<Integer, String> obj = new TwoTypes<>(1, "Java");
+        obj.print();
+    }
+}
